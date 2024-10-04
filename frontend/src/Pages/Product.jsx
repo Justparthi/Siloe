@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom'
 import BreadCrum from '../Components/BreadCrum/BreadCrum.jsx';
 import ProductDisplay from '../Components/ProductDisplay/ProductDisplay.jsx';
 import DescriptionBox from '../Components/DescriptionBox/DescriptionBox.jsx';
-import RelatedProduct from '../Components/RelatedProduct/RelatedProduct.jsx';
 
 const Product = () => {
 
