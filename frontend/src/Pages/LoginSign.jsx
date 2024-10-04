@@ -19,7 +19,7 @@ const LoginSign = () => {
     const login = async () => {
         console.log("Login Function Executed", formData)
         let responseData;
-        await fetch(`http://localhost:${port}/login`,{
+        await fetch(`https://postecom-backend.onrender.com/login`,{
             method:'POST',
             headers:{
                 Accept:'application/form-data',
@@ -40,7 +40,7 @@ const LoginSign = () => {
     const signup = async () => {
         console.log("SignUp function executed", formData)
         let responseData;
-        await fetch(`http://localhost:${port}/signup`,{
+        await fetch(`https://postecom-backend.onrender.com/signup`,{
             method:'POST',
             headers:{
                 Accept:'application/form-data',

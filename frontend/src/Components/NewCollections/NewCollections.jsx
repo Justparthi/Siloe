@@ -3,7 +3,7 @@ import './NewCollection.css'
 import Item from '../items/item';
 
 
-const port = process.env.PORT || 4000;
+// const port = process.env.PORT || 4000;
 
 
 
@@ -12,7 +12,7 @@ const NewCollections = () => {
     const [new_collection, setNew_Collection] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:${port}/newcollections`)
+        fetch(`https://postecom-backend.onrender.com/newcollections`)
         .then((response) => response.json())
         .then((data) => setNew_Collection(data));
     }, [])

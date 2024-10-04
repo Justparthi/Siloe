@@ -18,12 +18,12 @@ const ShopContextProvider = (props) => {
     const [cartItems, setCartItems] = useState(getDefaultCart())
     
     useEffect(() =>{
-        fetch(`http://localhost:${port}/allproducts`)
+        fetch(`https://postecom-backend.onrender.com/allproducts`)
         .then((response) => response.json())
         .then((data) => setAll_Product(data) )
 
         if(localStorage.getItem('auth-token')){
-            fetch(`http://localhost:${port}/getcart`, {
+            fetch(`https://postecom-backend.onrender.com/getcart`, {
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',
@@ -39,7 +39,7 @@ const ShopContextProvider = (props) => {
     const addToCart = (itemId) => {
         setCartItems((prev) =>({...prev, [itemId]:prev[itemId]+1}))
         if(localStorage.getItem('auth-token')){
-            fetch(`http://localhost:${port}/addtocart`,{
+            fetch(`https://postecom-backend.onrender.com/addtocart`,{
                 method :'POST',
                 headers:{
                     Accept:'application/form-data',
@@ -56,7 +56,7 @@ const ShopContextProvider = (props) => {
     const removeToCart = (itemId) => {
         setCartItems((prev) =>({...prev, [itemId]:prev[itemId]-1}))
         if(localStorage.getItem('auth-token')){
-            fetch(`http://localhost:${port}/removefromcart`,{
+            fetch(`https://postecom-backend.onrender.com/removefromcart`,{
                 method :'POST',
                 headers:{
                     Accept:'application/form-data',
