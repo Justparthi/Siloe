@@ -12,11 +12,14 @@ app.use(cors());
 
 // PostgreSQL connection
 const pool = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'postgres',
-  password: 'parthi',
+  user: 'ecomdb_owner',
+  host: 'ep-yellow-rice-a542ntu9.us-east-2.aws.neon.tech',
+  database: 'ecomdb',
+  password: 'M2PyoIiHzSB8',
   port: 5432,
+  ssl: {
+    rejectUnauthorized: false, // Only use in development, consider using a proper certificate in production
+  },
 });
 
 // API
