@@ -22,9 +22,22 @@ const pool = new Pool({
   },
 });
 
+// New variable for first load check
+let isFirstLoad = true;
+
 // API
 app.get('/', (req, res) => {
   res.send("Express App is Running")
+});
+
+// New endpoint for first load check
+app.get('/check-first-load', (req, res) => {
+  if (isFirstLoad) {
+    isFirstLoad = false;
+    res.json({ isFirstLoad: true, message: "It will take approximately 50 seconds to load items for the first time. Do you want to continue?" });
+  } else {
+    res.json({ isFirstLoad: false });
+  }
 });
 
 // Image storage
@@ -284,7 +297,8 @@ app.post('/getcart', fetchUser, async (req, res) => {
 app.listen(port, (error) => {
   if (!error) {
     console.log(`Server is running on port ${port}`);
+    console.log(`First load warning is active`);
   } else {
     console.log(`Error ${error}`);
   }
-}); 
+});
