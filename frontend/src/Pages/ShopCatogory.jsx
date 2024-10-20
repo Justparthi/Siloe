@@ -29,7 +29,7 @@ const ShopCatogory = (props) => {
                             />
                         );
                     }
-                    return null; // Add this line to return null for non-matching items
+                    return null; 
                 })}
             </div>
             <div className='shopCategory-loadmore'> 
