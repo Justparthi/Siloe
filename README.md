@@ -1,4 +1,4 @@
-# 🛍️ ShopSmart - Modern eCommerce Platform
+# 🛍️ Siloe - Modern eCommerce Platform
 
 Welcome to **ShopSmart**, a full-featured eCommerce platform built with React.js, PostgreSQL, and secured with JWT authentication. This application provides a seamless shopping experience with secure payments via Razorpay integration.
 
