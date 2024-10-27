@@ -178,12 +178,12 @@ GET    /api/orders/:id
 
 ## 🚀 Deployment
 
-1. **Frontend Deployment (Vercel/Netlify)**
+1. **Frontend Deployment (Vercel)**
    - Build the React application
    - Configure environment variables
    - Deploy the build folder
 
-2. **Backend Deployment (Heroku)**
+2. **Backend Deployment (render)**
    - Configure Procfile
    - Set environment variables
    - Deploy the backend application
