@@ -19,7 +19,7 @@ Welcome to **Siloe**, a full-featured eCommerce platform built with React.js, Po
   - React.js
   - Redux for state management
   - Axios for API calls
-  - Tailwind CSS for styling
+  - Bootstrap for styling
   
 - **Backend**
   - Node.js/Express.js
@@ -31,8 +31,8 @@ Welcome to **Siloe**, a full-featured eCommerce platform built with React.js, Po
 
 1. **Clone the Repository**
 ```bash
-git clone https://github.com/username/shopsmart.git
-cd shopsmart
+git clone https://github.com/justparthi/postecom.git
+cd postecom
 ```
 
 2. **Install Dependencies**
@@ -217,5 +217,5 @@ This project is licensed under the MIT License.
 
 For any queries or support:
 - Open an issue
-- Contact: support@shopsmart.com
+- Contact: support@siloe.com
 - Documentation: [Wiki](https://github.com/username/shopsmart/wiki)
