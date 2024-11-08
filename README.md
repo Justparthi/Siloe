@@ -31,7 +31,7 @@ Welcome to **Siloe**, a full-featured eCommerce platform built with React.js, Po
 
 1. **Clone the Repository**
 ```bash
-git clone https://github.com/justparthi/postecom.git
+git clone https://github.com/Justparthi/Siloe.git
 cd postecom
 ```
 
