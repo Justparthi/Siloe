@@ -1,43 +1,51 @@
 import React from 'react';
-import "./hero.css"
-import hero_image from '../../assets/hero.png'
 import { Link } from 'react-router-dom';
+import './hero.css';
+import heroImage from '../../assets/hero.png';
 
 const Hero = () => {
     return (
-
-      
-        <div className='hero-unique'>
-          
-            <div className='hero-grid'>
-                <div className='hero-content'>
-                    <div className='hero-text-overlay'>
-                        <h1>Urban <span>Eco</span> Fashion</h1>
-                        <p>Redefine your style with sustainable threads that speak volumes</p>
-                        <div className='hero-cta'>
-                            <Link to='/mens' className='btn-explore'>Explore Collection</Link>
-                            <div className='hero-stats'>
-                                <div className='stat'>
-                                    <span>500+</span>
-                                    <p>Eco Designs</p>
-                                </div>
-                                <div className='stat'>
-                                    <span>75%</span>
-                                    <p>Recycled Materials</p>
+        <div className="hero-abstract">
+            <div className="hero-content-wrapper">
+                <div className="hero-geometric-bg">
+                    <div className="hero-content-flex">
+                        <div className="hero-text-section">
+                            <h1>Urban <span>Sustainable</span> Fashion</h1>
+                            <p>Redefining style through conscious design and innovative materials.</p>
+                            
+                            <div className="hero-action-group">
+                                <Link to="/collections" className="hero-cta">
+                                    Explore Collections
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </Link>
+                                
+                                <div className="hero-metrics">
+                                    <div className="metric">
+                                        <span>+280</span>
+                                        <small>Eco Designs</small>
+                                    </div>
+                                    <div className="metric">
+                                        <span>92%</span>
+                                        <small>Recycled Materials</small>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className='hero-visual'>
-                    <div className='image-wrapper'>
-                        <img src={hero_image} alt="Sustainable Fashion" />
-                        <div className='image-overlay'></div>
+                        
+                        <div className="hero-image-container">
+                            <img 
+                                src={heroImage} 
+                                alt="Sustainable Fashion Collection" 
+                                className="hero-image" 
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     );
-}
+};
 
 export default Hero;
