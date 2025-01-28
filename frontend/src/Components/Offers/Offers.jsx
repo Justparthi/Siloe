@@ -1,6 +1,5 @@
 import React from 'react';
 import './Offers.css'
-import exclusive_img from '../../assets/exclusive_image.png'
 import { Link } from 'react-router-dom';
 
 const Offers = () => {
